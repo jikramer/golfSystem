@@ -1,0 +1,23 @@
+$def with (form)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Golf System</title>
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+	</head>
+	<body>
+		<div class="container">
+			<form name="main" method="post"> 
+
+				$if not form.valid: <p class="error">Please try again.</p>
+				<h1> Golf Scoring System </h1>
+				$:form.render()
+				<br>
+ 				<input type="submit" class = "btn btn-primary" />    
+
+			</form>
+		</div>
+	</body>
+</html>
